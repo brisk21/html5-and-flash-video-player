@@ -30,6 +30,10 @@ With Html5 Video && Flash Support
 
 [flashvideo file=video/video.flv html5=video/video.mp4/]
 
+Only Html5
+
+[flashvideo html5=video/video.mp4/]
+
 == Frequently Asked Questions ==
 
 = I have activated the plugin, but don't see the video player. What do I do? =
