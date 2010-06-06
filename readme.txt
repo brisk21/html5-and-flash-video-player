@@ -8,9 +8,13 @@ Stable tag: 1.0
 
 The html5 and flash video plugin for WordPress allows the addition of video (and other media) to a WordPress website, now you can also watch videos in your iPad or iPod. A full options menu is available with post-level overrides for endless customization. Installation is quick and easy, and no additional setup/coding/php knowledge is required. This plugin is low footprint, creating no tables, and uninstalling cleanly. Provides full support for Html5 Video, skinning the player, integration with Google Analytics, and the capability to display ads from LongTail Solutions.
 
+This plugin uses standards-compliant markup and the leading open source software (Joshua Eldridge FlashVideo Plugin, Jeroen Wijering's FLV Player and Geoff Stearns' SWFObject Javascript Library).
+
 == Description ==
 
 The html5 and flash video plugin for WordPress allows the addition of video (and other media) to a WordPress website, now you can also watch videos in your iPad or iPod. A full options menu is available with post-level overrides for endless customization. Installation is quick and easy, and no additional setup/coding/php knowledge is required. This plugin is low footprint, creating no tables, and uninstalling cleanly. Provides full support for Html5 Video, skinning the player, integration with Google Analytics, and the capability to display ads from LongTail Solutions.
+
+This plugin uses standards-compliant markup and the leading open source software (Joshua Eldridge FlashVideo Plugin, Jeroen Wijering's FLV Player and Geoff Stearns' SWFObject Javascript Library).
 
 == Installation ==
 
