@@ -32,11 +32,11 @@ This plugin uses standards-compliant markup and the leading open source software
 4. That's it! You're done. You can now enter the following into a post or page in WordPress to insert a video: 
 
 Without Html5 Video Support
-[flashvideo file=video/video.flv /]
+[videoplayer file=video/video.flv /]
 
 With Html5 Video && Flash Support
 
-[flashvideo file=video/video.flv html5=video/video.mp4/]
+[videoplayer file=video/video.flv html5=video/video.mp4/]
 
 Only Html5
 
