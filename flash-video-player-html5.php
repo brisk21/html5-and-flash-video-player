@@ -190,7 +190,7 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	$content_tag = "\n" . '<div id="video' . $videoid . '" class="flashvideo">';
 	//Check for video file for html5
 	if($html5==true){
-		$content_tag .= "\n" . '<video src="'.$inline_options['file'].'" width="' . $saved_options['Video Size']['width']['v'] . '" height="' . $saved_options['Video Size']['height']['v'] . '" controls ></video>';
+		$content_tag .= "\n" . '<video src="'.$inline_options['file'].'" width="' . $saved_options['Video Size']['width']['v'] . '" height="' . $saved_options['Video Size']['height']['v'] . '" controls poster="'.$inline_options['image'].'"></video>';
 		}
 	$content_tag .= "</div>";
 	if(strpos($inline_options['file'], 'http://') !== false || isset($inline_options['streamer']) || strpos($inline_options['file'], 'rtmp://') !== false || strpos($inline_options['file'], 'https://') !== false) {
