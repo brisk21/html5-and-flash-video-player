@@ -73,6 +73,7 @@ function FlashVideoPlayerPlugin_control() {
 // Plugin Functions Start
 function FlashVideoPlayerPlugin_parsecontent($content) {
 	$content = preg_replace_callback("/\[flashvideo ([^]]*)\/\]/i", "FlashVideoPlayerPlugin_renderplayer", $content);
+	$content = preg_replace_callback("/\[videoplayer ([^]]*)\/\]/i", "FlashVideoPlayerPlugin_renderplayer", $content);
 	return $content;
 }
 
