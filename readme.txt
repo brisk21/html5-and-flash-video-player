@@ -4,11 +4,13 @@ Twitter link: http://www.twitter.com/rodriev
 Tags: ipod, ipad,flash, video, flv, mp3, player, wordpress, plugin, swf, media, mp4, rtmp, playlist, google, analytics, longtail, ads,html5, html5 video
 Requires at least: 2.2.2
 Tested up to: 2.9.2
-Stable tag: 1.0
+Stable tag: 1.1
 
 The html5 and flash video plugin for WordPress allows the addition of video (and other media) to a WordPress website, now you can also watch videos in your iPad or iPod. A full options menu is available with post-level overrides for endless customization. Installation is quick and easy, and no additional setup/coding/php knowledge is required. This plugin is low footprint, creating no tables, and uninstalling cleanly. Provides full support for Html5 Video, skinning the player, integration with Google Analytics, and the capability to display ads from LongTail Solutions.
 
 This plugin uses standards-compliant markup and the leading open source software (Joshua Eldridge FlashVideo Plugin, Jeroen Wijering's FLV Player and Geoff Stearns' SWFObject Javascript Library).
+
+Please any problems you might encounter, contact me so I can fix it asap!
 
 * [Download Site (Current Version)](http://www.rodriev.com/plugins/)
 * [Frequently Asked Questions (F.A.Q.)](http://www.rodriev.com/plugins/)
@@ -19,6 +21,8 @@ This plugin uses standards-compliant markup and the leading open source software
 The html5 and flash video plugin for WordPress allows the addition of video (and other media) to a WordPress website, now you can also watch videos in your iPad or iPod. A full options menu is available with post-level overrides for endless customization. Installation is quick and easy, and no additional setup/coding/php knowledge is required. This plugin is low footprint, creating no tables, and uninstalling cleanly. Provides full support for Html5 Video, skinning the player, integration with Google Analytics, and the capability to display ads from LongTail Solutions.
 
 This plugin uses standards-compliant markup and the leading open source software (Joshua Eldridge FlashVideo Plugin, Jeroen Wijering's FLV Player and Geoff Stearns' SWFObject Javascript Library).
+
+Please any problems you might encounter, contact me so I can fix it asap!
 
 * [Download Site (Current Version)](http://www.rodriev.com/plugins/)
 * [Twitter](http://twitter.com/rodriev)
@@ -32,16 +36,24 @@ This plugin uses standards-compliant markup and the leading open source software
 4. That's it! You're done. You can now enter the following into a post or page in WordPress to insert a video: 
 
 Without Html5 Video Support
-[videoplayer file=video/video.flv /]
+[videoplayer file="video/video.flv" /]
 
 With Html5 Video && Flash Support
 
-[videoplayer file=video/video.flv html5=video/video.mp4/]
+[videoplayer file="video/video.(mp4, ogg, webm" /]
 
-Only Html5
+== Changelog ==
 
-[flashvideo html5=video/video.mp4/]
+= 1.1 =
+* Change tag to [videoplayer /], still supports the last one.
+* Delete the html5 parameter, now you can only use file
 
+== Upgrade Notice ==
+
+= 1.1 =
+* Change tag to [videoplayer /], still supports the last one.
+* Delete the html5 parameter, now you can only use file
+ 
 == Frequently Asked Questions ==
 
 = I have activated the plugin, but don't see the video player. What do I do? =
