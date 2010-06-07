@@ -130,7 +130,7 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	}
 	// Make sure the only required parameter has been provided
 	if ( !array_key_exists('filename', $inline_options) && !array_key_exists('file', $inline_options) &&  !array_key_exists('html5', $inline_options) && !array_key_exists('html5', $inline_options)) {
-		return '<div style="background-color:#ff9;padding:10px;"><p>Error: Required parameter "file" or "html5" is missing!</p></div>';
+		return '<div style="background-color:#ff9;padding:10px;"><p>Error: Required parameter "file" is missing!</p></div>';
 		exit;
 	}
 	if (array_key_exists('filename', $inline_options) || array_key_exists('file', $inline_options)){
@@ -143,6 +143,16 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	if(array_key_exists('filename', $inline_options)) {
 		$inline_options['file'] = $inline_options['filename'];
 		unset($inline_options['filename']);
+	}
+	
+	//Check Extension:
+	$filename = $inline_options['file'];
+	$ext = end(explode('.', $filename));
+	if($ext=="mp4" || $ext=="ogg" || $ext=="webm"){
+		$html5 = true;
+		}
+	else{
+		$html5 = false;
 	}
 	// Override inline parameters 
 	if ( array_key_exists('width', $inline_options) ) {
@@ -179,8 +189,8 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	
 	$content_tag = "\n" . '<div id="video' . $videoid . '" class="flashvideo">';
 	//Check for video file for html5
-	if($inline_options['html5']!=$site_url . '/'){
-		$content_tag .= "\n" . '<video src="'.$inline_options['html5'].'" width="' . $saved_options['Video Size']['width']['v'] . '" height="' . $saved_options['Video Size']['height']['v'] . '" controls ></video>';
+	if($html5==true){
+		$content_tag .= "\n" . '<video src="'.$inline_options['file'].'" width="' . $saved_options['Video Size']['width']['v'] . '" height="' . $saved_options['Video Size']['height']['v'] . '" controls ></video>';
 		}
 	$content_tag .= "</div>";
 	if(strpos($inline_options['file'], 'http://') !== false || isset($inline_options['streamer']) || strpos($inline_options['file'], 'rtmp://') !== false || strpos($inline_options['file'], 'https://') !== false) {
@@ -224,19 +234,18 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	
 
 	$output = $content_tag;
-	if ($flashvideo == true){
-	    $output .= "\n" . '<script type="text/javascript">';
-		$flashvars = implode(",", $flashvars);
-		$output .= "\n" . "var params = { 'allowfullscreen': 'true', 'allowscriptaccess': 'always', 'wmode': 'transparent' };";
-		$output .= "\n" . "var attributes = { 'id': 'video" . $videoid . "', 'name': 'video" . $videoid . "'};";
-		$output .= "\n" . 'var flashvars = {';
-		$output .=  $flashvars;
-		$output .= "\n" . ' };';
-		$output .= "\n" . 'swfobject.embedSWF("' . $site_url .'/wp-content/plugins/flash-video-player-html5/mediaplayer/player.swf", "video' . $videoid . '", "' . $saved_options['Video Size']['width']['v'] . '", "' . $saved_options['Video Size']['height']['v'] . '", "9.0.0","' . $site_url . '/wp-content/plugins/flash-video-player-html5/mediaplayer/expressinstall.swf", flashvars, params, attributes);';
-		$output .= "\n" . '</script>';
-		$output .= "\n" . '<!-- End HTML5 and Flash Video Player Plugin -->' . "\n";
-		}
+	$output .= "\n" . '<script type="text/javascript">';
+	$flashvars = implode(",", $flashvars);
+	$output .= "\n" . "var params = { 'allowfullscreen': 'true', 'allowscriptaccess': 'always', 'wmode': 'transparent' };";
+	$output .= "\n" . "var attributes = { 'id': 'video" . $videoid . "', 'name': 'video" . $videoid . "'};";
+	$output .= "\n" . 'var flashvars = {';
+	$output .=  $flashvars;
+	$output .= "\n" . ' };';
+	$output .= "\n" . 'swfobject.embedSWF("' . $site_url .'/wp-content/plugins/flash-video-player-html5/mediaplayer/player.swf", "video' . $videoid . '", "' . $saved_options['Video Size']['width']['v'] . '", "' . $saved_options['Video Size']['height']['v'] . '", "9.0.0","' . $site_url . '/wp-content/plugins/flash-video-player-html5/mediaplayer/expressinstall.swf", flashvars, params, attributes);';
+	$output .= "\n" . '</script>';
+	$output .= "\n" . '<!-- End HTML5 and Flash Video Player Plugin -->' . "\n";
 	$videoid++;
+	
 	if(is_feed()) {
 		return $rss_output;
 	} else {
