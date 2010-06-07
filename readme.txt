@@ -1,7 +1,7 @@
 === HTML5 and Flash Video Player ===
 Contributors: Rodrigo Violante
 Twitter link: http://www.twitter.com/rodriev
-Tags: ipod, ipad,flash, video, flv, mp3, player, wordpress, plugin, swf, media, mp4, rtmp, playlist, google, analytics, longtail, ads,html5, html5 video
+Tags: ipod, ipad,flash, video, ogg, webm, flv, mp3, player, wordpress, plugin, swf, media, mp4, rtmp, playlist, google, analytics, longtail, ads,html5, html5 video
 Requires at least: 2.2.2
 Tested up to: 2.9.2
 Stable tag: 1.1
