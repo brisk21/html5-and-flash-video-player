@@ -12,6 +12,7 @@ This plugin uses standards-compliant markup and the leading open source software
 
 Please any problems you might encounter, contact me so I can fix it asap!
 
+**Please Support with a Twitter follow**
 * [Download Site (Current Version)](http://www.rodriev.com/plugins/)
 * [Frequently Asked Questions (F.A.Q.)](http://www.rodriev.com/plugins/)
 * [Complete Options](http://www.rodriev.com/plugins/)
@@ -24,6 +25,7 @@ This plugin uses standards-compliant markup and the leading open source software
 
 Please any problems you might encounter, contact me so I can fix it asap!
 
+**Please Support with a Twitter follow**
 * [Download Site (Current Version)](http://www.rodriev.com/plugins/)
 * [Twitter](http://twitter.com/rodriev)
 * [Blog](http://www.rodriev.com/)
