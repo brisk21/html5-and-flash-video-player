@@ -6,7 +6,6 @@ Requires at least: 2.2.2
 Tested up to: 3.0
 Stable tag: 1.2
 
-**PLEASE DELETE AND REINSTALL THE PLUGIN**
 
 The html5 and flash video plugin for WordPress allows the addition of video (and other media) to a WordPress website, now you can also watch videos in your iPad or iPod. A full options menu is available with post-level overrides for endless customization. Installation is quick and easy, and no additional setup/coding/php knowledge is required. This plugin is low footprint, creating no tables, and uninstalling cleanly. Provides full support for Html5 Video, skinning the player, integration with Google Analytics, and the capability to display ads from LongTail Solutions.
 
@@ -14,7 +13,7 @@ This plugin uses standards-compliant markup and the leading open source software
 
 Please any problems you might encounter, contact me so I can fix it asap!
 
-**Please Support with a Twitter follow**
+Please Support with a Twitter follow
 * [Download Site (Current Version)](http://www.rodriev.com/plugins/)
 * [Frequently Asked Questions (F.A.Q.)](http://www.rodriev.com/plugins/)
 * [Complete Options](http://www.rodriev.com/plugins/)
@@ -27,7 +26,7 @@ This plugin uses standards-compliant markup and the leading open source software
 
 Please any problems you might encounter, contact me so I can fix it asap!
 
-**Please Support with a Twitter follow**
+==Please Support with a Twitter follow==
 * [Download Site (Current Version)](http://www.rodriev.com/plugins/)
 * [Twitter](http://twitter.com/rodriev)
 * [Blog](http://www.rodriev.com/)
@@ -50,6 +49,7 @@ With Html5 Video && Flash Support
 
 = 1.2 =
 * Bug Fix Incorrect path - (Thanks Fil)
+* PLEASE DELETE AND REINSTALL THE PLUGIN
 
 = 1.1 =
 * Change tag to [videoplayer /], still supports the last one.
