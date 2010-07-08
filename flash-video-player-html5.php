@@ -85,7 +85,7 @@ function FlashVideoPlayerPlugin_head() {
 	global $site_url, $plugin_specific;
 	switch($plugin_specific['swfobject']['v']) {
 		case 'local':
-			echo '<script type="text/javascript" src="' . $site_url . '/wp-content/plugins/flash-video-player-html5/swfobject.js"></script>' . "\n";
+			echo '<script type="text/javascript" src="' . $site_url . '/wp-content/plugins/html5-and-flash-video-player/swfobject.js"></script>' . "\n";
 		break;
 		case 'google':
 			echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.1/swfobject.js"></script>' . "\n";
@@ -172,7 +172,7 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	} else {
 		if ($saved_options['File Properties']['image']['v'] == '') {
 			// Place the default image, since there isn't one set.
-			$rss_output .= '<img src="' . $site_url . '/' . 'wp-content/plugins/flash-video-player-html5/default_video_player.gif" />';
+			$rss_output .= '<img src="' . $site_url . '/' . 'wp-content/plugins/html5-and-flash-video-player/default_video_player.gif" />';
 		} else {
 			$rss_output .= '<img src="' . $saved_options['File Properties']['image']['v'] . '" />';
 		}
@@ -224,7 +224,7 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 				// fully qualified path. This will ensure the player displays correctly on category pages as well.
 				if($key == 'skin') {
 					//if($value['v'] != 'undefined') {
-						$flashvars[] = "\n\t'" . $key . "' : '" . $site_url . "/wp-content/plugins/flash-video-player-html5/skins/" . $value['v'] . '/' . trim($value['v']) . ".swf'";
+						$flashvars[] = "\n\t'" . $key . "' : '" . $site_url . "/wp-content/plugins/html5-and-flash-video-player/skins/" . $value['v'] . '/' . trim($value['v']) . ".swf'";
 					//}
 				} else {
 					$flashvars[] = "\n\t'" . $key . "' : '" . trim($value['v']) . "'";
@@ -242,7 +242,7 @@ function FlashVideoPlayerPlugin_renderplayer($tag_string) {
 	$output .= "\n" . 'var flashvars = {';
 	$output .=  $flashvars;
 	$output .= "\n" . ' };';
-	$output .= "\n" . 'swfobject.embedSWF("' . $site_url .'/wp-content/plugins/flash-video-player-html5/mediaplayer/player.swf", "video' . $videoid . '", "' . $saved_options['Video Size']['width']['v'] . '", "' . $saved_options['Video Size']['height']['v'] . '", "9.0.0","' . $site_url . '/wp-content/plugins/flash-video-player-html5/mediaplayer/expressinstall.swf", flashvars, params, attributes);';
+	$output .= "\n" . 'swfobject.embedSWF("' . $site_url .'/wp-content/plugins/html5-and-flash-video-player/mediaplayer/player.swf", "video' . $videoid . '", "' . $saved_options['Video Size']['width']['v'] . '", "' . $saved_options['Video Size']['height']['v'] . '", "9.0.0","' . $site_url . '/wp-content/plugins/html5-and-flash-video-player/mediaplayer/expressinstall.swf", flashvars, params, attributes);';
 	$output .= "\n" . '</script>';
 	$output .= "\n" . '<!-- End HTML5 and Flash Video Player Plugin -->' . "\n";
 	$videoid++;
