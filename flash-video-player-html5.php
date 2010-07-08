@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Flash Video Player with HTML5
-Version: 1.0
+Version: 1.2
 Plugin URI: http://www.rodriev.com
 Description: Simplifies the process of adding video to a WordPress blog wiht support on html5. Powered by Jeroen Wijering's FLV Media Player,SWFObject by Geoff Stearns and based on Joshua Eldridge Flash Plugin.
 Author: Rodrigo Violante
