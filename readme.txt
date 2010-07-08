@@ -3,8 +3,10 @@ Contributors: Rodrigo Violante
 Twitter link: http://www.twitter.com/rodriev
 Tags: ipod, ipad,flash, video, ogg, webm, flv, mp3, player, wordpress, plugin, swf, media, mp4, rtmp, playlist, google, analytics, longtail, ads,html5, html5 video
 Requires at least: 2.2.2
-Tested up to: 2.9.2
-Stable tag: 1.1
+Tested up to: 3.0
+Stable tag: 1.2
+
+**PLEASE DELETE AND REINSTALL THE PLUGIN**
 
 The html5 and flash video plugin for WordPress allows the addition of video (and other media) to a WordPress website, now you can also watch videos in your iPad or iPod. A full options menu is available with post-level overrides for endless customization. Installation is quick and easy, and no additional setup/coding/php knowledge is required. This plugin is low footprint, creating no tables, and uninstalling cleanly. Provides full support for Html5 Video, skinning the player, integration with Google Analytics, and the capability to display ads from LongTail Solutions.
 
