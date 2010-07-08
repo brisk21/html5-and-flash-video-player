@@ -46,6 +46,9 @@ With Html5 Video && Flash Support
 
 == Changelog ==
 
+= 1.2 =
+* Bug Fix Incorrect path - (Thanks Fil)
+
 = 1.1 =
 * Change tag to [videoplayer /], still supports the last one.
 * Delete the html5 parameter, now you can only use file
